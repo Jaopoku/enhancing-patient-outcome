@@ -1,9 +1,9 @@
 # ============================================================
 # PRIVATE PATIENT-LEVEL DATA — DO NOT COMMIT
 # ============================================================
-data/*.xlsx
-data/*.xls
-data/*.csv
+# data/*.xlsx
+# data/*.xls
+# data/*.csv
 
 # Python caches / environments
 __pycache__/
