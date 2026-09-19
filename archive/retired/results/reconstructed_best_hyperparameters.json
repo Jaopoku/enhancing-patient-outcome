@@ -1,0 +1,37 @@
+{
+  "XGBoost": {
+    "n_estimators": 350,
+    "max_depth": 10,
+    "learning_rate": 0.01351182947645082,
+    "subsample": 0.6783931449676581,
+    "colsample_bytree": 0.6180909155642152,
+    "reg_lambda": 0.02001342062287998,
+    "eval_metric": "logloss",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "Random Forest": {
+    "n_estimators": 450,
+    "max_depth": 13,
+    "min_samples_split": 8,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "Support Vector Machine": {
+    "kernel": "linear",
+    "C": 0.6672367170464207,
+    "probability": true,
+    "random_state": 42
+  },
+  "Neural Network": {
+    "hidden_layer_sizes": [
+      32
+    ],
+    "alpha": 4.207053950287933e-05,
+    "learning_rate_init": 0.00013066739238053285,
+    "max_iter": 1000,
+    "random_state": 42
+  }
+}

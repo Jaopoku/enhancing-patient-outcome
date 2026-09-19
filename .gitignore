@@ -1,0 +1,41 @@
+# ============================================================
+# PRIVATE PATIENT-LEVEL DATA — DO NOT COMMIT
+# ============================================================
+data/*.xlsx
+data/*.xls
+data/*.csv
+
+# Python caches / environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets / credentials
+.env
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Model artifacts
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.keras
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

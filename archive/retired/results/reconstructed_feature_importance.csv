@@ -1,0 +1,17 @@
+Feature,Mean_Abs_SHAP
+Systolic_BP,1.6467302
+HbA1c,1.2284219
+BMI,0.7716097
+Creatinine,0.5204527
+Comorbidity_Count,0.4092174
+Age,0.306934
+Cholesterol,0.18052691
+Medication_Adherence,0.0706221
+Diastolic_BP,0.05775281
+Length_of_Stay,0.03377913
+Smoking_Status,0.027958414
+Prior_Admissions,0.022248276
+Disease_Type_Diabetes,0.0130882105
+Disease_Type_Hypertension,0.011114093
+Disease_Type_Cardiovascular Disease,0.008806346
+Sex,0.0077223796

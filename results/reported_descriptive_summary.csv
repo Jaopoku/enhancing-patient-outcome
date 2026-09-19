@@ -1,0 +1,4 @@
+Disease_Type,Patients,Mean_Age,Mean_HbA1c,Readmission_Rate,Progression_Rate,Complication_Rate
+Cardiovascular Disease,394,57.805,6.27,0.363,0.477,0.386
+Diabetes,586,56.877,7.744,0.466,0.587,0.509
+Hypertension,620,57.652,6.285,0.308,0.452,0.411

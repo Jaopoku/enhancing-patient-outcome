@@ -1,0 +1,11 @@
+Feature,Mean_SHAP_Importance
+Age,0.189
+HbA1c,0.176
+Systolic_BP,0.151
+Medication_Adherence,0.142
+Comorbidity_Count,0.131
+Prior_Admissions,0.124
+Smoking_Status,0.097
+Cholesterol,0.082
+Creatinine,0.069
+BMI,0.055

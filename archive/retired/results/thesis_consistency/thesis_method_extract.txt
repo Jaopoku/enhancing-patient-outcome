@@ -1,0 +1,438 @@
+This study employed a quantitative retrospective cohort design to examine the effectiveness of machine learning (ML) algorithms in chronic disease management and their potential to improve patient outcomes. Patient medical records obtained from multiple healthcare institutions were used to develop predictive models for chronic conditions such as diabetes, hypertension, and cardiovascular diseases. The research was structured to address the study objectives through systematic model development, evaluation, and interpretation.   To address the first research question, machine learning models were developed to predict outcomes such as disease progression, hospital readmission, and complications. Predicted outcomes were compared with actual clinical outcomes recorded in patient medical records. Model performance was evaluated using standard metrics, including accuracy, precision, recall, F1-score, and the area under the receiver operating characteristic curve (AUC-ROC). The dataset was divided into training (70%) and testing (30%) subsets. Stratified k-fold cross-validation was applied within the training data to ensure balanced representation of outcome classes, while hyperparameter optimization using  Optuna  was performed to improve  model performance. Final evaluations were conducted on the holdout test dataset to assess model generalizability.   For the second research question, several machine learning algorithms, including Random Forest, Support Vector Machine (SVM), Neural Networks, and  XGBoost , were trained and compared using electronic health record (EHR) data. Their predictive performance was assessed using the same evaluation metrics to determine the most effective algorithm for predicting chronic disease outcomes.   To address the third research question, model interpretability techniques were employed to identify the most influential predictive variables. SHAP ( SHapley  Additive Explanations) values were used to measure the contribution of demographic, clinical, and comorbidity-related factors to model predictions. This approach facilitated the identification of key risk factors, supported patient risk stratification, and provided insights for targeted clinical interventions aimed at improving patient outcomes.
+
+Sampling Techniques  
+
+Sixteen regional referral hospitals around Ghana were chosen using purposive selection. High patient numbers, a wide range of cases, and their significance to diabetes, hypertension, and cardiovascular disease were the reasons these facilities were selected. Access to rich, contextually relevant data that was in line with the goals of the study was guaranteed by this method. Along with capturing demographic and diagnostic diversity, it also offered regional representation.  In order to  create reliable, generalizable machine learning models appropriate for real-world datasets, the approach was crucial. The study improved statistical power and prediction accuracy by concentrating on referral hospitals and increasing the prevalence of chronic disease cases ( Etikan  et al., 2016; Palinkas et al., 2015) .
+
+Sample Size  
+
+Sixteen regional hospitals in Ghana were selected to participate in the study using a selective sample technique. These were all large referral hospitals, those that  send  patients to other hospitals—that treat a wide range of illnesses, including diabetes, hypertension, and cardiovascular ailments. This approach provided the researchers with an information-rich sample size that aligns with the study's objectives regarding the creation and validation of machine learning models.   Patient records from hospitals from a specific period in the past make up the samples.   Due to the volume of data in the sample population, numerous samples were employed to improve the generalizability of results, boost the predictive power, and statistically aid in the creation of machine learning constrpredictiveirement to guarantee adequate variance in patient demographics and clinical outcomes within the sample (which enhances the models' generalizability and accuracy) dictated the number of samples required for the investigation. When employing data as the foundation for quantitative research, it has been demonstrated that larger sample sizes yield more accurate and less biased estimates than smaller sample sizes (Creswell and Creswell, 2018).The external validity of the results was further strengthened by the intentional selection of hospitals, which guaranteed that the sample encompassed a variety of clinical and geographic representations. When demographic features are necessary to successfully address research objectives, such sampling procedures are appropriate ( Etikan  et al., 2016).
+
+
+
+3.6 Data Collection  
+
+The authors of the fourth study extracted de-identified electronic health records (EHRs) from the five participating hospitals in the study area to create a primary data source. EHR data contained information at a patient level (age, sex) and clinical measures (blood pressure, HbA1c), comorbidities, treatment history, and hospitalization outcomes. They were chosen as being important variables for understanding disease progression, predicting hospital readmissions, and supporting clinical decision-making about chronic disease management. In addition, EHRs provided the opportunity to gather large amounts of real-world clinical data over an extended retrospective duration and to have a more comprehensive and reliable dataset (Kelleher et al., 2020). After the extraction of the data, systematic preprocessing techniques were applied to format and clean the dataset prior to analysis. Preprocessing included identification and resolution of missing values through the application of appropriate imputation techniques to reduce the impact of missing data on modelling and bias, normalization of continuous variables to achieve a common scale, conversion of categorical variables to numeric formats appropriate for machine learning algorithms, and adjustment for class  imbalances in the outcome variables using appropriate techniques to increase the accuracy of models and provide greater predictive ability for outcomes. Proper pre-processing techniques for the dataset ensured that it was sufficiently clean and consistent to support accurate and robust statistical and machine numerical analysis of all outcomes. 
+
+3.7 Data Analysis  
+
+To fulfil the research goals, a processed dataset was used to train and validate machine learning algorithms using many different algorithms to discover patterns in this dataset to create predictions about the progression of disease and hospital readmissions. The models were given clean and pre-processed data in training, and validation procedures were used to determine predictive accuracy on new (unseen) data.    The preprocessed dataset was split into training (70%) and holdout test (30%) sets. The training set was used for model development and hyperparameter optimization, while the holdout test set provided an independent assessment of model generalization. Within the training set, stratified k-fold cross-validation (k = 5) was applied, preserving the class distribution across folds to reduce bias, particularly for imbalanced outcomes. Hyperparameter optimization was conducted using  Optuna , allowing iterative exploration of parameter spaces for each algorithm (e.g., learning rates, tree depth, number of estimators, regularization) to identify configurations that maximized predictive performance.    Models were evaluated using multiple metrics: accuracy, precision, recall, F1 score, and AUC-ROC, providing a comprehensive assessment of predictive reliability and discrimination ability. To identify the most influential features, SHAP values were computed, offering interpretability by quantifying the contribution of demographics, clinical indicators, and comorbidities to model predictions.    This integrated evaluation workflow combining holdout testing, stratified cross-validation, hyperparameter optimization, and feature interpretability ensured that the resulting models were robust, reproducible, and generalizable to diverse patient populations. Python-based libraries, including scikit-learn, XGBoost, and SHAP, were used for model training, evaluation, and interpretation. 
+
+
+
+Figure  3      Source: Researcher’s own construct 
+
+3.8 Ethical Considerations  
+
+Ethical considerations are crucial to this investigation since patient health records are sensitive. In accordance with current data protection requirements, all data will be de-identified before analysis to guarantee privacy and confidentiality (Mittelstadt et al., 2016). Prior to data harvest, ethical permission will be sought from the Ghana Health Service Ethics Committee and the Institutional Review Boards (IRBs) of the participating regional hospitals. Secure transmission methods, restricted access to authorized persons only, and encrypted storage are examples of data security techniques. Additionally, the study will follow international ethical standards, such as the Declaration of Helsinki, which places a strong emphasis on justice, beneficence, and respect in research involving human subjects (World Medical Association, 2013).
+
+
+
+
+
+
+
+
+
+                  4. Data Analysis, Results and Discussion
+
+4.1 Introduction
+
+This chapter presents the analysis, results, and discussion of the study on the application of machine learning (ML) algorithms for predicting adverse outcomes in chronic disease management. The analysis is based on 1,600 de-identified electronic health records obtained from sixteen regional hospitals across Ghana and includes patients diagnosed with diabetes, hypertension, and cardiovascular disease. Four machine learning algorithms, Random Forest, Support Vector Machine (SVM), Artificial Neural Network (ANN), and XGBoost were developed and evaluated to assess their ability to predict clinically relevant outcomes, including 30-day hospital readmission, disease progression, and disease-related complications.   The purpose of this chapter is to present the empirical findings derived from descriptive statistical analysis and machine learning modelling. Specifically, the chapter describes the demographic and clinical characteristics of the study population, the data preparation and preprocessing procedures, the comparative performance of the machine learning models using established evaluation metrics, and the identification of the most influential predictive variables through SHAP (Shapley Additive Explanations) analysis. The findings are interpreted in relation to the research objectives and discussed in comparison with relevant empirical and theoretical literature.
+
+In line with these objectives, the chapter seeks to answer the following research questions:
+
+To what extent can machine learning algorithms accurately predict adverse outcomes in chronic disease management?
+
+Which machine learning algorithm provides the most accurate predictions of chronic disease progression and 30-day hospital readmission?
+
+What are the most significant predictive features contributing to the performance of machine learning models in chronic disease management?
+
+The findings presented in this chapter provide empirical evidence on the predictive capabilities of machine learning models and their potential to  support clinical decision-making, risk stratification, and early intervention for patients with chronic diseases. All conclusions are based on descriptive statistics, quantitative performance metrics, feature importance analysis, and comparative evaluation of the algorithms.
+
+4.2 Data Preparation and Preprocessing
+
+Prior to descriptive analysis and machine learning model development, the dataset underwent a series of preprocessing procedures to ensure accuracy, consistency, completeness, and suitability for predictive modelling. The raw dataset consisted of 1,600 de-identified patient records collected from sixteen regional hospitals across Ghana and included demographic, clinical, and outcome variables relevant to chronic disease management and the prediction of adverse outcomes, particularly 30-day hospital readmission. The preprocessing stage involved data cleaning, transformation of variables into machine-readable formats, correction of class imbalance, and partitioning of the dataset into training and testing subsets.
+
+4.2.1 Data Cleaning
+
+Data cleaning was undertaken to improve the overall quality and reliability of the dataset prior to statistical analysis and model training. All variables were systematically examined for missing values, duplicate observations, inconsistencies, and outliers. Attention was given to clinical variables such as body mass index (BMI), glycated hemoglobin (HbA1c), cholesterol, creatinine, blood pressure measurements, and prior admissions due to their relevance in predicting adverse chronic disease outcomes.
+
+A total of 47 missing values were identified across four continuous variables, namely BMI, HbA1c, cholesterol, and creatinine. As shown in Table 4.1, the proportion of missing data was minimal, ranging from 0.50% to 1.12% across the affected variables. HbA1c recorded the highest number of missing observations (18 cases, 1.12%), followed by BMI (12 cases, 0.75%), cholesterol (9 cases, 0.56%), and creatinine (8 cases, 0.50%). Because the overall proportion of missing data was low and confined to numerical variables, median imputation was employed. This approach was selected because it is less sensitive to skewed distributions and extreme values than mean substitution. No missing values were identified in categorical variables or in the target outcome variable
+
+                     Table 4.1: Summary of Missing Values and Imputation Methods
+
+Table  1
+
+[TABLE]
+Variable | Missing Values (n) | Missing Percentage | Imputation Method
+BMI | 12 | 0.75% | Median
+HbA1c | 18 | 1.12% | Median
+Cholesterol | 9 | 0.56% | Median
+Creatinine | 8 | 0.50% | Median
+Total Missing Values | 47 | – | Median
+
+
+
+The dataset was subsequently assessed for duplicate records through comparisons of patient identifiers, admission information, and clinical profiles. No duplicate observations were detected; therefore, no records were removed during this stage of preprocessing.   Continuous variables were also examined for extreme values using the Interquartile Range (IQR) method. A total of 21 outlying observations were identified across selected clinical variables, including age, blood pressure, HbA1c, cholesterol, and creatinine. Further examination indicated that these values remained within clinically plausible ranges and were therefore considered valid patient observations rather than data entry errors. Consequently, the observations were retained to preserve potentially important clinical information.   To minimize the influence of extreme values on model estimation while maintaining the integrity of the original data,  winsorization  was applied at the 1st and 99th percentiles. This procedure reduced the impact of unusually low and high values by replacing extreme observations with the nearest values within the specified percentile thresholds, thereby improving data stability without excluding valid patient records.
+
+Table 4.2: Duplicate and Outlier Treatment Summary
+
+Table  2
+
+[TABLE]
+Data Quality Issue | Count | Action Taken                         
+Duplicate records | 0 | None removed
+Outlying observations | 21 | Winsorized  (1st and 99th percentiles)
+Records excluded | 0 | All retained
+
+
+
+The cleaning procedures indicated that the dataset was relatively complete and internally consistent, requiring only limited correction prior to analysis. Importantly, all patient records were retained, thereby preserving the representativeness of the sample for subsequent modelling procedures.
+
+4.2.2 Data Transformation
+
+Following data cleaning, transformation procedures were applied to convert the dataset into a format suitable for machine learning analysis. These procedures ensured that variables were represented numerically and that differences in measurement scales did not distort model estimation or predictive performance.
+
+Continuous variables, including age, BMI, systolic blood pressure, diastolic blood pressure, HbA1c, cholesterol, creatinine, medication adherence, length of stay, prior admissions, and comorbidity count, were standardized using z-score normalization.
+
+z = (x − μ) / σ
+
+In this equation, x represents the original observation, μ denotes the  mean  of the variable, and σ represents the standard deviation. Standardization centered the variables around zero and rescaled them to unit variance, thereby ensuring comparability among predictors measured on different scales. This procedure was applied specifically to Support Vector Machine and Artificial Neural Network models because these algorithms are sensitive to differences in feature magnitude. In contrast, Random Forest and XGBoost models were trained using the original unscaled variables since tree-based methods are generally unaffected by scale variation.   Categorical variables were transformed into numerical forms prior to model fitting. Binary variables such as sex and smoking status were encoded using 0/1 representation, while disease type, consisting of diabetes, hypertension, and cardiovascular disease categories, was transformed through one-hot encoding. This approach enabled the contribution of each disease category to be estimated independently without introducing artificial ordinal relationships among the categories.
+
+Table 4.3: Data Transformation Techniques
+
+Table  3
+
+[TABLE]
+Variable Category | Variables Included | Transformation Method | Models Applied
+Continuous variables | Age, BMI, Blood Pressure, HbA1c, Cholesterol, Creatinine, Medication Adherence, Length of Stay, Prior Admissions, Comorbidity Count | StandardScaler  (z-score normalization) | Support Vector Machine, Neural Network
+Binary variables | Sex, Smoking Status | 0/1 Encoding | All models
+Multicategory variable | Disease Type | One-Hot Encoding | All models
+
+
+
+To prevent information leakage, all transformation parameters, including scaling statistics and category mappings, were derived exclusively from the training dataset and subsequently applied to the testing dataset. This ensured consistency across model training and evaluation procedures while preserving the integrity of the predictive analysis.
+
+4.2.3 Class Balancing
+
+Assessment of the target outcome variable revealed a moderate class imbalance within the dataset. Of the 1,600 patient records, 993 patients (62.1%) were classified as not readmitted within 30 days, whereas 607 patients (37.9%) experienced readmission. Although the minority class accounted for more than one-third of the observations, the imbalance was considered sufficient to potentially influence model training and reduce the ability of machine learning algorithms to accurately identify patients at risk of readmission.
+
+To preserve the integrity of model evaluation, the dataset was first partitioned into training and testing subsets using stratified random sampling. This procedure maintained the original outcome distribution across both subsets. The training set consisted of 1,120 records (70%), while the testing set consisted of 480 records (30%).
+
+Table 4.4: Training and Test Set Allocation
+
+  Table  4
+
+[TABLE]
+Dataset Partition | Number of Records | Percentage
+Training Set | 1,120 | 70.0%
+Test Set | 480 | 30.0%
+Total | 1,600 | 100.0%
+
+
+
+Further examination of the outcome distribution within the partitioned data indicated that the training set contained 695 non-readmission cases and 425 readmission cases, while the testing set contained 298 non-readmission cases and 182 readmission cases. The stratified sampling procedure therefore preserved the original class proportions within both subsets, ensuring that the testing dataset remained representative of the overall population.
+
+Following dataset partitioning, the Synthetic Minority Over-sampling Technique (SMOTE) was applied exclusively to the training dataset. SMOTE generates synthetic minority-class observations by interpolating between existing minority-class samples and their nearest neighbor’s, thereby improving class representation without simply duplicating existing observations. Applying SMOTE only to the training data prevented information leakage and ensured that model performance was evaluated using an untouched testing dataset that reflected real-world outcome distributions.
+
+As shown in Table 4.5, the training  dataset  initially contained 695 non-readmission cases and 425 readmission cases. Following the application of SMOTE, the minority class was oversampled to match the majority class, resulting in a balanced training dataset with equal representation of both outcome categories. This balancing procedure enhanced the ability of the machine learning algorithms to learn patterns associated with readmission events and reduced the likelihood of prediction bias toward the majority class.
+
+
+
+
+
+Table 4.5: Class Distribution Before and After SMOTE
+
+Table  5
+
+[TABLE]
+Outcome Class | Training Set Before SMOTE (n) | Training Set After SMOTE (n)
+No Readmission (0) | 695 | 695
+Readmission (1) | 425 | 695
+Total | 1,120 | 1,390
+
+
+
+SMOTE was applied only to the training dataset to balance the minority class while preserving the original class distribution in the testing dataset.
+
+Overall, the class balancing procedure improved the suitability of the training dataset for predictive modelling while preserving the original outcome distribution within the testing dataset for unbiased model evaluation.   Overall, the preprocessing procedures resulted in a complete and analytically suitable dataset for machine learning analysis. Missing values were successfully addressed through median imputation, clinically plausible outliers were retained following  winsorization , categorical and continuous variables were appropriately transformed, and class imbalance within the training dataset was corrected using SMOTE. These procedures enhanced data quality and established a robust foundation for the predictive modelling analyses presented in the subsequent sections.
+
+                  4.3 Descriptive Analysis of the Dataset
+
+The dataset consists of 1,600 patient records from 16 regional hospitals in Ghana, covering three primary chronic conditions: Hypertension                           ( n = 620, 38.7%), Diabetes (n = 586, 36.6%), and cardiovascular disease (n = 394, 24.6%). The patient population had a mean age of 57.3 years (SD = 13.8), ranging from 25 to 90 years, with a nearly equal gender distribution of 798 males (49.8%) and 803 females (50.2%).   Patients with Diabetes tended to be slightly younger on average but presented with substantially poorer  glycaemic  control, as evidenced by a mean HbA1c of 7.74% compared to 6.29% for Hypertension and 6.27% for cardiovascular disease. This elevated HbA1c level among diabetic patients signals a higher metabolic burden and aligns with their increased risk profiles observed in the outcome variables.
+
+Table 4.6: Patient Distribution and Key Clinical Characteristics by Disease Type
+
+Table  6
+
+[TABLE]
+Disease Type | Frequency | Percentage | Mean Age | Mean HbA1c | Mean BMI | Mean Systolic BP
+Hypertension | 620 | 38.7 | 57.7 | 6.29 | 28.0 | 144.8
+Diabetes | 58 6 | 36.6 | 56.9 | 7.74 | 28.4 | 145.9
+Cardiovascular Disease | 394 | 24.6 | 57.8 | 6.27 | 27.8 | 145.1
+Overall | 1,600 | 100.0 | 57.3 | 6.85 | 28.1 | 145.2
+
+
+
+Clinically, the cohort displayed elevated cardiovascular risk factors. The average Body Mass Index (BMI) of 28.1 kg/m² indicates that a large proportion of patients were overweight or obese, with Diabetes patients showing slightly higher BMI values. Blood pressure readings were generally high, with a mean Systolic BP of 145.2 mmHg (SD ≈ 18.7) and Diastolic BP of 85.6 mmHg (SD ≈ 12.1). Laboratory parameters further revealed mean Cholesterol levels of 5.4 mmol/L and mean Creatinine of 1.12 mg/dL, suggesting varying degrees of metabolic and renal involvement across the sample.   Behavioral risk factors showed that 18.4% of patients were current smokers. Medication adherence averaged 78.6% (SD = 14.2), indicating room for improvement in consistent treatment compliance. Patients had an average of 1.8 prior hospital admissions (SD = 1.4) and a mean comorbidity count of 2.1 (SD = 1.3), highlighting the multimorbidity burden common in this population.
+
+Table 4.7: Prevalence of Adverse Outcomes
+
+Table  7
+
+[TABLE]
+Outcome Variable | Positive Cases | Percentage (%)
+30-Day Readmission | 542 | 33.9
+Disease Progression | 845 | 52.8
+Complications | 715 | 44.7
+
+
+
+Diabetes patients exhibited the highest burden of adverse outcomes, with a 30-day readmission rate of 46.6%, disease progression rate of 58.7%, and complication rate of 50.9%. In contrast, Hypertension patients had the lowest readmission rate (30.8%), while cardiovascular disease patients fell in between. These differences underscore the particularly aggressive nature of Diabetes within this Ghanaian chronic disease cohort and emphasize the need for targeted predictive modeling to identify high-risk individuals early.   Overall, descriptive analysis portrays a middle-aged to elderly chronic disease population facing substantial clinical challenges, including poor  glycaemic  control (especially in Diabetes), elevated blood pressure, overweight status, and high rates of adverse clinical events. These patterns provide critical context for understanding the predictive importance of variables such as HbA1c, Age, Systolic BP, Medication Adherence, and Comorbidity Count in the subsequent machine learning models.   The equal contribution of 100 records from each of the 16 hospitals across all regions of Ghana provided strong geographic and institutional diversity, thereby minimizing potential bias and enhancing the generalizability of subsequent findings. Taken together, the descriptive profile reveals a typical chronic disease population in Ghana — predominantly middle-aged to elderly, with significant metabolic and cardiovascular risk factors, high levels of multimorbidity, and notably poor outcomes, particularly among diabetic patients. These characteristics offer important context for the machine learning analyses and strongly support the predictive relevance of variables such as age, HbA1c, systolic blood pressure, medication adherence, and comorbidity count.
+
+
+
+Table 4.8: Patient Distribution by Hospital and Disease Type
+
+Table  8
+
+[TABLE]
+Hospital_ID | Hospital Name | Frequency | Percentage (%) | Hypertension (%) | Diabetes (%) | Cardiovascular Disease (%)
+1 | Greater Accra Regional Hospital | 100 | 6.25 | 58.0 | 28.0 | 14.0
+2 | Ashanti Regional Hospital | 100 | 6.25 | 48.0 | 32.0 | 20.0
+3 | Western Regional Hospital | 100 | 6.25 | 42.0 | 38.0 | 20.0
+4 | Central Regional Hospital | 100 | 6.25 | 45.0 | 35.0 | 20.0
+5 | Eastern Regional Hospital | 100 | 6.25 | 40.0 | 35.0 | 25.0
+6 | Volta Regional Hospital | 100 | 6.25 | 44.0 | 36.0 | 20.0
+7 | Oti Regional Hospital | 100 | 6.25 | 41.0 | 37.0 | 22.0
+8 | Northern Regional Hospital | 100 | 6.25 | 39.0 | 40.0 | 21.0
+9 | Savannah Regional Hospital | 100 | 6.25 | 43.0 | 34.0 | 23.0
+10 | North East  Regional Hospital | 100 | 6.25 | 37.0 | 42.0 | 21.0
+11 | Upper East Regional Hospital | 100 | 6.25 | 46.0 | 33.0 | 21.0
+12 | Ahafo Regional Hospital | 100 | 6.25 | 40.0 | 38.0 | 22.0
+13 | Bono Regional Hospital | 100 | 6.25 | 41.0 | 36.0 | 23.0
+14 | Bono East Regional Hospital | 100 | 6.25 | 39.0 | 39.0 | 22.0
+15 | Upper West Regional Hospital | 100 | 6.25 | 42.0 | 35.0 | 23.0
+16 | Western North Regional Hospital | 100 | 6.25 | 38.0 | 42.0 | 20.0
+Total | All 16 Hospitals | 1,600 | 100.0 | 38.7 | 36.6 | 24.6
+
+
+
+                   4.4 Performance Evaluation of Machine Learning Models
+
+4.4.1 Training and Validation Process
+
+The final dataset consisted of 1,600 cleaned and preprocessed patient records obtained from sixteen regional hospitals in Ghana. To support robust model development and unbiased performance assessment, the dataset was divided into a training set and a holdout test set using a stratified 70:30 split. This resulted in 1,120 records (70.0%) allocated to the training set and 480 records (30.0%) reserved exclusively for final testing. The training set was utilized for model fitting, class balancing using SMOTE, and hyperparameter optimization, while the holdout test set was kept completely untouched until the final evaluation phase. This separation is critical in predictive modeling as it simulates real-world deployment conditions, allowing for an honest assessment of how the models would perform on new, unseen patient data.
+
+Stratified sampling was deliberately applied during the data split to preserve the original proportions of positive and negative outcomes for 30-day readmission, disease progression, and complications in both subsets. Given the inherent class imbalance in the outcome variables, this stratification ensured that both the training and test sets remained representative of the full dataset. By maintaining consistent outcome distributions, the approach minimized sampling bias and prevented situations where one subset might artificially contain easier or harder cases, thereby enhancing the reliability of model performance estimates.
+
+Table 4.9: Dataset Partitioning Summary
+
+Table  9
+
+[TABLE]
+Dataset | Number of Records | Percentage (%) | Purpose
+Training Set | 1,120 | 70.0 | Model training, SMOTE class balancing, hyperparameter tuning, cross-validation
+Holdout Test Set | 480 | 30.0 | Final unbiased evaluation of model generalizability
+Total | 1,600 | 100.0 | -
+
+
+
+Within the training dataset, stratified 5-fold cross-validation was conducted to provide a robust estimate of model stability and to guide hyperparameter tuning. The 1,120 training records were divided into five approximately equal folds of 224 records each. In every iteration, four folds (896 records) were used to train the model while the held-out fold (224 records) served as the internal validation set. This process was repeated five times so that every record in the training set was used exactly once for validation. Averaging the performance metrics across the five folds offered a more reliable indication of model behavior than a single train-validation split and played a vital role in reducing the risk of overfitting, especially important when working with clinical data that may contain subtle patterns and noise.
+
+Hyperparameter optimization was performed using  Optuna , a powerful Bayesian optimization framework.  Optuna  efficiently explored a wide range of parameter combinations for each algorithm (Random Forest, XGBoost, Support Vector Machine, and Neural Network) with the goal of maximizing predictive performance on the cross-validation folds. This systematic search was essential because different algorithms have unique sensitivities to parameters such as tree depth, learning rate, regularization strength, and kernel functions. The combination of stratified 5-fold cross-validation and  Optuna  optimization ensured that the final models were not only well-tuned but also stable across different subsets of the training data.
+
+Overall, the adopted training and validation framework, comprising a stratified holdout split, stratified k-fold cross-validation, and Bayesian hyperparameter optimization, provided a rigorous and methodologically sound foundation for model development. These practices are particularly important in healthcare predictive modeling, where model reliability, generalizability, and avoidance of overfitting can have direct implications for clinical decision support. By implementing these steps, the study established a strong basis for fair comparison among the four algorithms and increased confidence in the final performance results obtained on the independent holdout test set.
+
+4.4.2 Performance Metrics
+
+The performance of the developed machine learning models was evaluated using five widely accepted classification metrics: accuracy, precision, recall, F1-score, and AUC-ROC. These metrics were selected because they provide a comprehensive and multidimensional assessment of model performance, which is particularly crucial in healthcare settings where both false positives and false negatives can have significant clinical consequences.
+
+Accuracy measures the overall proportion of correct predictions. Precision indicates the proportion of positive predictions that were correct. Recall (sensitivity) measures the proportion of actual positive cases correctly identified. The F1-score, as the harmonic means of precision and recall, offers a balanced view especially useful for imbalanced datasets. The AUC-ROC evaluates the model’s ability to discriminate between classes across different thresholds.
+
+The final performance results on the holdout test set (n = 480) are presented below:
+
+Table 4.10: Performance Metrics of Machine Learning Models on the Holdout 
+
+Test Set
+
+   Table  10
+
+[TABLE]
+Algorithm | Accuracy | Precision | Recall | F1-Score | AUC-ROC
+XGBoost | 0.939 | 0.944 | 0.893 | 0.918 | 0.985
+Random Forest | 0.902 | 0.884 | 0.855 | 0.869 | 0.963
+Support Vector Machine | 0.899 | 0.874 | 0.857 | 0.865 | 0.961
+Neural Network | 0.896 | 0.867 | 0.858 | 0.863 | 0.959
+
+
+
+ Figure 4.1: Comparative Performance of Machine Learning Models
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              Figure  4
+
+XGBoost demonstrated superior performance across all metrics, achieving the highest accuracy (93.9%), precision (94.4%), recall (89.3%), F1-score (91.8%), and an outstanding AUC-ROC of 0.985. This indicates excellent discriminative ability and a strong balance between correctly identifying high-risk patients while minimizing false positives. The high recall is particularly valuable in this clinical context, as it means the model successfully captured nearly 90% of patients who were readmitted within 30 days.
+
+In comparison, Random Forest, Support Vector Machine, and Neural Network also performed well, with accuracies above 89.6% and AUC-ROC values exceeding 0.959. However, they lagged behind XGBoost in precision, recall, and F1-score. This consistent outperformance by XGBoost highlights its robustness and suitability for deployment in chronic disease prediction, especially for identifying patients at elevated risk of readmission, disease progression, and complications.
+
+The strong AUC-ROC values across all models confirm their excellent ability to distinguish between classes. Collectively, these results validate the effectiveness of the data preprocessing, class balancing, and hyperparameter optimization steps implemented earlier, resulting in highly reliable predictive models for chronic disease management
+
+4.4.3 Comparative Performance of Algorithms
+
+The comparative evaluation of the four machine learning algorithms XGBoost, Random Forest, Support Vector Machine, and Neural Network  were conducted using the independent holdout test set comprising 480 patient records. This test set was excluded from all stages of model training, hyperparameter tuning, and cross-validation to ensure an unbiased assessment of model generalization. Performance was measured using five complementary evaluation metrics: accuracy, precision, recall, F1-score, and Area Under the Receiver Operating Characteristic Curve (AUC-ROC). Together, these metrics provide a comprehensive assessment of predictive performance by evaluating not only the proportion of correctly classified observations, but also the model’s ability to distinguish between patients who experienced adverse outcomes and those who did not. The comparative results reveal substantial differences in how the algorithms modeled the complex, nonlinear, and highly interactive relationships inherent in the clinical dataset.   Table 4.6 presents the overall predictive performance of the four machine learning models. All algorithms achieved strong results, with accuracy values exceeding 89.0% and AUC-ROC values above 0.959. These findings indicate that the preprocessing pipeline which included data cleaning, normalization, feature engineering, class balancing using Synthetic Minority Oversampling Technique (SMOTE), and hyperparameter optimization produced a high-quality dataset capable of supporting reliable predictive modeling. Although all models demonstrated excellent discriminative capacity, clear differences emerged in their ability to balance sensitivity and specificity, with XGBoost showing the most robust and clinically meaningful performance.
+
+
+
+Table 4.11: Comparative Performance of Machine Learning Algorithms on the Holdout Test Set
+
+Table  11
+
+[TABLE]
+Algorithm | Accuracy | Precision | Recall | F1-Score | AUC-ROC
+XGBoost | 0.939 | 0.944 | 0.893 | 0.918 | 0.985
+Random Forest | 0.902 | 0.884 | 0.855 | 0.869 | 0.963
+Support Vector Machine | 0.899 | 0.874 | 0.857 | 0.865 | 0.961
+Neural Network | 0.896 | 0.867 | 0.858 | 0.863 | 0.959
+
+
+
+Figure 4.2: Comparative Performance of Machine Learning Models
+
+Figure 4.2 provides a comparative visualization of the performance metrics obtained by the four machine learning algorithms on the holdout test dataset. The grouped presentation facilitates direct comparison of Accuracy, Precision, Recall, F1-Score, and AUC-ROC across the algorithms and highlights differences in predictive capability.
+
+The figure demonstrates that XGBoost consistently achieved the highest values across all five-performance metrics, followed by Random Forest, Support Vector Machine, and Neural Network. Although the differences between Random Forest, Support Vector Machine, and Neural Network were relatively small, XGBoost maintained a clear advantage in overall predictive performance, particularly in precision, F1-score, and AUC-ROC.
+
+The visualization further confirms that all four models exhibited excellent discriminative ability, as evidenced by AUC-ROC values above 0.95. These findings provide graphical support for the numerical results presented in Table 4.6 and reinforce the conclusion that XGBoost represents the most effective algorithm for predicting adverse outcomes among chronic disease patients.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure  5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                           Figure 6
+
+Figure  7 Figure  7
+
+       
+
+
+
+
+
+
+
+
+
+
+
+                 
+
+
+
+
+
+
+
+
+
+
+
+Figure  8 Figure  8
+
+                                               
+
+
+
+                                           Figure 8
+
+
+
+        
+
+
+
+Figure 9
+
+The comparative evaluation of the machine learning models revealed that all four algorithms achieved strong predictive performance in forecasting chronic disease outcomes. However,  XGBoost  emerged as the best- performing model across all evaluation metrics, demonstrating superior predictive accuracy, discrimination, and generalization capability. The model achieved an accuracy of 93.9%, indicating that it correctly classified approximately 451 out of 480 patients in the holdout test dataset. This high level of accuracy suggests that  XGBoost  was highly effective in identifying patterns associated with adverse outcomes such as hospital readmission, disease progression, and chronic disease complications.
+
+In addition to its accuracy,  XGBoost  recorded the highest precision score of 94.4%, indicating that when the model identified a patient as high risk, the prediction was correct in more than nine out of ten cases. This is particularly important in healthcare settings, where false-positive predictions can lead to unnecessary diagnostic procedures, increased clinician workload, and inefficient use of limited healthcare resources. The model also achieved a recall of 89.3%, demonstrating its ability to correctly identify  the majority of  patients who eventually experienced adverse health outcomes. From a clinical perspective, high recall is essential because failure to identify high-risk patients may result in missed opportunities for preventive interventions and timely treatment. The F1-score of 0.918 further confirms the effectiveness of  XGBoost  by demonstrating an excellent balance between precision and recall. Most notably, the model achieved an AUC-ROC value of 0.985, indicating near-perfect discrimination between high-risk and low-risk patients. This suggests that  XGBoost  consistently ranked patients according to their actual risk levels regardless of the classification threshold applied. The superior performance of  XGBoost  can be attributed to its gradient boosting mechanism, which sequentially builds decision trees while correcting errors made by previous trees. Additionally, features such as regularization, shrinkage, column subsampling, and efficient handling of missing values help reduce overfitting and improve model generalizability. These characteristics make  XGBoost  particularly effective in healthcare datasets where complex nonlinear interactions exist among variables such as age, blood pressure, blood glucose levels, cholesterol, body mass index, medication adherence, smoking status, and comorbidities.
+
+Random Forest ranked second among the evaluated algorithms. The model achieved an accuracy of 90.2%, precision of 88.4%, recall of  85.5%, F1-score of 0.869, and AUC-ROC of 0.963. These results indicate strong predictive capability and excellent discrimination. Random Forest operates by constructing multiple decision trees using bootstrap samples and random subsets of predictor variables, before combining the results through majority voting. This ensemble approach reduces variance, increases stability, and improves robustness against overfitting. The algorithm was particularly effective at capturing nonlinear relationships and interactions among clinical variables without requiring assumptions about underlying data distributions. Despite its strong performance, Random Forest consistently produced lower scores than  XGBoost  across all evaluation metrics. The difference was especially evident in recall, where Random Forest identified fewer high-risk patients. This limitation may be attributed to the fact that Random Forest builds trees independently and lacks the iterative error-correction mechanism that characterizes boosting algorithms. Nevertheless, the model’s high AUC-ROC value demonstrates that it remains a reliable tool for healthcare prediction and could be considered for implementation in settings where model stability and interpretability are prioritized. The Support Vector Machine (SVM) also demonstrated competitive performance, achieving an accuracy of 89.9%, precision of 87.4%, recall of 85.7%, F1-score of 0.865, and AUC-ROC of 0.961. These findings suggest that SVM was effective in distinguishing between high-risk and low-risk patients. By identifying an optimal hyperplane that maximizes class separation, SVM performs well when complex relationships can be represented within a transformed feature space. The use of standardized clinical variables enhanced the model’s ability to process continuous indicators such as blood pressure, glucose levels, and cholesterol measurements. However, SVM achieved slightly lower precision and recall compared with the ensemble tree-based models. This suggests that the algorithm faced challenges in fully capturing the heterogeneous nature of chronic disease profiles, where interactions among clinical, behavioural, and socioeconomic variables may be highly complex. Although kernel functions allow SVM to model nonlinear relationships, its performance remains sensitive to parameter selection and kernel optimization.  Consequently, its ability to balance false positives and false negatives was somewhat lower than that of  XGBoost  and Random Forest.
+
+The Neural Network achieved an accuracy of 89.6%, precision of 86.7%, recall of 85.8%, F1-score of 0.863, and AUC-ROC of 0.959. These results indicate that the model successfully identified meaningful patterns within the healthcare dataset and performed comparably to SVM. Neural networks are particularly valuable because they can capture complex nonlinear relationships and higher-order interactions among predictor variables. In this study, the model effectively learned associations among demographic, metabolic, cardiovascular, and behavioural factors that influence chronic disease outcomes. Despite these strengths, the Neural Network recorded the lowest overall performance among the evaluated models. One possible explanation is that neural networks typically require larger datasets to fully realize their predictive capabilities. Additionally, model performance is highly dependent on architecture design, parameter initialization, learning rates, and regularization techniques. Another limitation is reduced interpretability, which can hinder clinician trust and acceptance when healthcare decisions require transparency and justification. Overall, all four machine learning algorithms demonstrated excellent predictive performance, with AUC-ROC values ranging from 0.959 to 0.985. The relatively narrow performance differences among Random Forest, SVM, and Neural Network indicate that the dataset contained strong predictive signals that could be effectively utilized by different modelling approaches. Nevertheless,  XGBoost  consistently outperformed the other algorithms across every evaluation metric, confirming its superiority for predicting chronic disease outcomes. These findings have important implications for healthcare practice. Effective clinical decision-support systems must minimize both false-positive and false-negative predictions. While false positives can result in unnecessary healthcare interventions and increased costs, false negatives may prevent high-risk patients from receiving timely preventive care. By achieving the highest precision and recall,  XGBoost  demonstrated the most favourable balance between these competing considerations, making it the most clinically useful model. The results also validate the methodological rigor of the study. The strong performance achieved  across all models reflects the effectiveness of preprocessing procedures, including data cleaning, feature scaling, categorical encoding, class balancing using SMOTE, stratified train-test splitting, and hyperparameter optimization. Collectively, the findings support existing literature that identifies  XGBoost  as one of the most effective machine learning algorithms for healthcare prediction. Furthermore, the study provides valuable evidence from Ghanaian healthcare data, demonstrating the potential of predictive analytics and machine learning to improve chronic disease management, enhance clinical decision-making, and support early intervention strategies within local healthcare settings.
+
+4.5 SHAP Analysis Results
+
+The SHAP (Shapley Additive Explanations) analysis was conducted to provide a detailed interpretation of feature contributions to the predictions generated by the machine learning models, particularly the best-performing XGBoost model. SHAP values quantify the extent to which each feature contributes to increasing or decreasing the predicted probability of an outcome for each individual patient, thereby offering both global and local interpretability. The SHAP summary indicated that systolic blood pressure had the highest overall contribution to model predictions. Higher SHAP values for systolic blood pressure were consistently associated with increased predicted risk of adverse outcomes, while lower values corresponded to reduced risk. This demonstrates a strong positive relationship between elevated blood pressure and the likelihood of complications, hospital readmission, or disease progression. HbA1c levels were also identified as a dominant predictor. The SHAP distribution showed that higher HbA1c values significantly pushed model predictions toward higher risk categories, particularly for diabetic patients. Conversely, controlled HbA1c levels contributed negatively to risk prediction, indicating protective effects. This reinforces its clinical relevance as a marker of long-term  glycaemic  control. Age demonstrated a steady upward trend in SHAP impact, with older patients consistently receiving higher risk contributions from this variable. This pattern indicates that age acts as a cumulative risk amplifier across all chronic disease categories. Similarly, BMI showed a nonlinear relationship, where both moderate and high values contributed positively to risk, though the effect was more pronounced at higher levels, reflecting obesity-related complications. Creatinine levels showed strong SHAP influence in distinguishing patients at risk of renal and cardiovascular complications. Elevated creatinine values consistently increased predicted risk scores, indicating reduced kidney function as a critical determinant in disease progression models. Smoking status and cholesterol levels exhibited moderate but consistent SHAP effects. Smoking increased risk contributions across cardiovascular outcomes, while elevated cholesterol values contributed positively to risk predictions, though with less magnitude compared to blood pressure and HbA1c.
+
+                  4.5.1 Most Significant Predictors
+
+To identify the most important predictors of chronic disease outcomes, this study employed SHAP ( SHapley  Additive Explanations) analysis and feature importance rankings derived from machine learning models. Predictors were categorized into three groups: demographic factors, clinical indicators, and comorbidities. The analysis revealed that each group contributed differently to predictive performance and patient risk stratification. Demographic variables provided a foundational layer of prediction across all machine learning algorithms. Among these variables, age emerged as the most influential demographic predictor. SHAP analysis showed a clear trend in which increasing age was associated with a higher probability of hospital readmission, disease progression, and chronic disease complications. This relationship can be attributed to age-related physiological decline and prolonged exposure to chronic disease risk factors. Gender also contributed to prediction, although its influence was less pronounced. Male patients generally exhibited higher risk levels for cardiovascular-related outcomes, while gender differences in diabetes-related outcomes were more balanced. Overall, demographic variables functioned primarily as background risk modifiers rather than direct determinants of disease outcomes. Clinical indicators were identified as the most significant predictors, producing the highest SHAP values across all models. Systolic blood pressure emerged as the strongest clinical predictor, with elevated levels substantially increasing the likelihood of adverse outcomes. Diastolic blood pressure also demonstrated a meaningful, though slightly weaker, influence. HbA1c levels were particularly important in diabetes prediction, as higher values indicated poor glycaemic control and increased risk of complications. Body mass index (BMI) showed a strong nonlinear relationship with risk, especially at higher obesity levels. Additionally, cholesterol and creatinine levels played critical roles in cardiovascular and renal risk assessment, respectively. These findings highlight the direct physiological relationship between clinical indicators and chronic disease progression. Comorbidities further enhanced predictive accuracy by capturing the effects of multiple coexisting conditions. Patients with combinations of diabetes, hypertension, and cardiovascular disease consistently exhibited  higher risk scores. Smoking status also contributed significantly to risk prediction, particularly for cardiovascular outcomes. The interaction between smoking and other clinical factors further increased predicted risk levels. Overall, the results indicate that clinical indicators were the most influential predictors, followed by comorbidities, while demographic factors provided essential baseline information for risk assessment.
+
+4.5.2 Implications of Key Predictive Features
+
+In chronic disease management, understanding the predictive variables that identify risk factors and impact the course of the disease is critical to improving early identification of risk factors, monitoring of patients, and selecting treatment interventions for chronic diseases. The key predictive variables for chronic disease management were identified as clinical indicators (e.g., systolic blood pressure, HbA1c, BMI, cholesterol, and creatinine values) combined with socio-demographic and co-morbidity-related (e.g., age, sex, ethnicity, and number of concomitant chronic conditions) predictors that have value in generating predictable risk profiles for patients in healthcare systems using machine learning. This study will assist providers in managing chronic diseases because it shows how continuously monitored clinical indicators can predict the progression of chronic disease conditions and allow for appropriate interventions. For instance, patients with hypertension and increased levels of HbA1c were identified as having an increased risk of complications or readmission to the hospital. Therefore, monitoring patients with uncontrolled hypertension and/or diabetes should be more frequent. Similarly, BMI and cholesterol are 2 examples of how lifestyle factors and metabolic control affect chronic disease management over time. Creatinine is also a useful indicator, as it can show an early sign of kidney impairment, which is a common complication of hypertension and diabetes. By using these clinical indicators in predictive models, healthcare organizations can transition to a proactive approach to chronic disease management by identifying patients with high co-morbidity risk before they deteriorate clinically. In terms of providing support for clinicians' clinical decision-making process, the predictive features identified in this study will enhance the interpretability and usefulness of machine learning models for clinical use. Clinicians can utilize these variables as structured risk  indicators when determining treatment priority and resource allocation. For example, clinicians could use the SHAP contribution score from hypertension and HbA1c to flag a patient as requiring monitoring more frequently than those without elevated SHAP contributions. The interpretability provided by SHAP analysis further strengthens clinical trust in the model outputs, as it allows healthcare professionals to understand why a specific prediction was made. This transparency supports integration into clinical workflows, particularly in decision-support systems where explainability is essential.

@@ -1,0 +1,5 @@
+Algorithm,Accuracy,Precision,Recall,F1_Score,AUC_ROC
+XGBoost,0.939,0.944,0.893,0.918,0.985
+Random Forest,0.902,0.884,0.855,0.869,0.963
+Support Vector Machine,0.899,0.874,0.857,0.865,0.961
+Neural Network,0.896,0.867,0.858,0.863,0.959

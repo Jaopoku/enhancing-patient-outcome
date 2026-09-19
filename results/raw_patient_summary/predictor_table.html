@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Proposed replacement Table 4.12 — Readmission_30D</title><style>body{font:16px/1.5 Arial,sans-serif;max-width:1100px;margin:40px auto;padding:0 20px;color:#172b3a}h1{font-size:25px}table{border-collapse:collapse;width:100%;margin:24px 0}th,td{text-align:left;padding:12px;border-bottom:1px solid #ccd7df}th{background:#173e57;color:white}tr:nth-child(even){background:#f1f5f8}p{white-space:pre-line}@media print{body{margin:0;font-size:11pt}}</style><body><h1>Proposed replacement Table 4.12 — Readmission_30D</h1><p>Calculated from the original patient records. Proposed correction for review; importance comes from a new reconstructed model.</p><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Predictor</th>
+      <th>Mean / Frequency</th>
+      <th>Relative Importance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Systolic Blood Pressure (mmHg)</td>
+      <td>145.3 ± 19.8</td>
+      <td>Rank 1; SHAP 3.3163</td>
+    </tr>
+    <tr>
+      <td>HbA1c (%)</td>
+      <td>6.85 ± 1.60</td>
+      <td>Rank 2; SHAP 2.1514</td>
+    </tr>
+    <tr>
+      <td>Body Mass Index (kg/m²)</td>
+      <td>28.1 ± 4.9</td>
+      <td>Rank 3; SHAP 1.5329</td>
+    </tr>
+    <tr>
+      <td>Creatinine (mg/dL)</td>
+      <td>1.12 ± 0.39</td>
+      <td>Rank 4; SHAP 1.1420</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>57.3 ± 13.8</td>
+      <td>Rank 6; SHAP 0.5391</td>
+    </tr>
+    <tr>
+      <td>Total Cholesterol (mmol/L)</td>
+      <td>5.4 ± 1.2</td>
+      <td>Rank 7; SHAP 0.4885</td>
+    </tr>
+    <tr>
+      <td>Comorbidity Count</td>
+      <td>2.1 ± 1.3</td>
+      <td>Rank 5; SHAP 0.9259</td>
+    </tr>
+    <tr>
+      <td>Smoking Status</td>
+      <td>Yes: 773 (48.3%); No: 827 (51.7%)</td>
+      <td>Rank 8; SHAP 0.0756</td>
+    </tr>
+  </tbody>
+</table><p>Source: patient_analysis_workbook.xlsx, sheet Patient_Data; 1,600 records. Means and sample SDs use observed raw values, before imputation or winsorization. Smoking percentages use nonmissing smoking records (0=No, 1=Yes).
+
+Importance: fresh XGBoost model predicting Readmission_30D; stratified 70/30 train/test split, seed 42; imputation and winsorization fitted on training data only, SMOTE on training data only. SHAP scores are mean absolute contributions on the holdout in raw model-output (log-odds) units. Ranks compare the eight listed predictors; all model features appear in reconstructed_feature_importance.csv. Fixed reconstruction parameters are recorded in run_metadata.json; historical fitted models are not available.
+
+The thesis does not specify numeric cutoffs for Very High/High/Moderate–High/Moderate. This table therefore reports calculated scores and ranks. Reported thesis numbers and summary sheets are not inputs to this calculation.
+</p></body></html>

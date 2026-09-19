@@ -1,0 +1,14 @@
+Metric,Value
+Patient_Data rows,1600.0
+Patient_Data columns,19.0
+Duplicate rows,0.0
+Total missing cells,0.0
+Hospitals,16.0
+Patients per hospital (min),100.0
+Patients per hospital (max),100.0
+Readmission_30D prevalence,0.379375
+Disease_Progression prevalence,0.5075
+Complication prevalence,0.440625
+Mean age,57.405625
+Mean BMI,28.0628125
+Mean systolic BP,144.77875

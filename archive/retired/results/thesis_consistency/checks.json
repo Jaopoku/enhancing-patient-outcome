@@ -1,0 +1,2368 @@
+{
+  "source": "C:\\Users\\kwofi\\Desktop\\fixed\\data\\patient_analysis_workbook.xlsx",
+  "sha256": "8cc4ed880f1f92b583ff7b814512db80460a779179c1eeb53ade2d2541a2d9c8",
+  "rows": 1600,
+  "columns": 19,
+  "missing_cells": 0,
+  "duplicate_rows": 0,
+  "sheets": [
+    "Patient_Data",
+    "Model_Performance",
+    "Feature_Importance",
+    "Descriptive_Summary"
+  ],
+  "stored_disease_summary_matches_to_3_decimals": true,
+  "matching_scenarios": [],
+  "scenarios": [
+    {
+      "scenario": "Full cohort: sample SD",
+      "n": 1600,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.77875,
+          "sd": 19.173114082674914,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.815562500000001,
+          "sd": 1.5273824404167111,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.0628125,
+          "sd": 5.023292670960958,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.09295625,
+          "sd": 0.3798613328980484,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.405625,
+          "sd": 12.13916978261928,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.607125,
+          "sd": 1.2024414331892246,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.98375,
+          "sd": 1.4238163401951214,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Full cohort: population SD",
+      "n": 1600,
+      "ddof": 0,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.77875,
+          "sd": 19.167121548044193,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.815562500000001,
+          "sd": 1.5269050588015451,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.0628125,
+          "sd": 5.021722646646642,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.09295625,
+          "sd": 0.3797426076778026,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.405625,
+          "sd": 12.135375699144012,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.607125,
+          "sd": 1.2020656115100374,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.98375,
+          "sd": 1.423371328044794,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Complete cases across all columns",
+      "n": 1600,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.77875,
+          "sd": 19.173114082674914,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.815562500000001,
+          "sd": 1.5273824404167111,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.0628125,
+          "sd": 5.023292670960958,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.09295625,
+          "sd": 0.3798613328980484,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.405625,
+          "sd": 12.13916978261928,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.607125,
+          "sd": 1.2024414331892246,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.98375,
+          "sd": 1.4238163401951214,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Duplicate rows removed",
+      "n": 1600,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.77875,
+          "sd": 19.173114082674914,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.815562500000001,
+          "sd": 1.5273824404167111,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.0628125,
+          "sd": 5.023292670960958,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.09295625,
+          "sd": 0.3798613328980484,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.405625,
+          "sd": 12.13916978261928,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.607125,
+          "sd": 1.2024414331892246,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.98375,
+          "sd": 1.4238163401951214,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Median imputation",
+      "n": 1600,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.77875,
+          "sd": 19.173114082674914,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.815562500000001,
+          "sd": 1.5273824404167111,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.0628125,
+          "sd": 5.023292670960958,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.09295625,
+          "sd": 0.3798613328980484,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.405625,
+          "sd": 12.13916978261928,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.607125,
+          "sd": 1.2024414331892246,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.98375,
+          "sd": 1.4238163401951214,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Full-cohort 1st/99th percentile winsorization",
+      "n": 1600,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.767925,
+          "sd": 18.88602134703934,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.810500000000001,
+          "sd": 1.5133600568481842,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.04501,
+          "sd": 4.975749985162717,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.09151875,
+          "sd": 0.3758815441504918,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.408649999999994,
+          "sd": 12.02799137586306,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.6028125,
+          "sd": 1.185665199823519,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.974375,
+          "sd": 1.3910167824942794,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Train, 70/30 split stratified by Readmission_30D, seed 42",
+      "n": 1120,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.49553571428572,
+          "sd": 19.047327764712353,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.839285714285714,
+          "sd": 1.5333852310557397,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.00866071428571,
+          "sd": 5.017177463187322,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0794285714285712,
+          "sd": 0.3772479649580386,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.31785714285714,
+          "sd": 12.198274202828207,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.621071428571429,
+          "sd": 1.2030578831208225,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.9839285714285715,
+          "sd": 1.4033378804442094,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Train, Readmission_30D split, training-fitted winsorization",
+      "n": 1120,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.45521428571428,
+          "sd": 18.791112980124105,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.833903571428571,
+          "sd": 1.518190019198174,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.991532142857142,
+          "sd": 4.9710519543128875,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0777232142857145,
+          "sd": 0.37237744767330144,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.31696428571429,
+          "sd": 12.10312495480591,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.617857142857143,
+          "sd": 1.1883117308032696,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.9767857142857144,
+          "sd": 1.3788250650241025,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Test, 70/30 split stratified by Readmission_30D, seed 42",
+      "n": 480,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 145.43958333333333,
+          "sd": 19.467453054451653,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.760208333333334,
+          "sd": 1.5134263268142596,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.18916666666667,
+          "sd": 5.040508902188454,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.1245208333333332,
+          "sd": 0.3844370387018109,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.610416666666666,
+          "sd": 12.010272909404913,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.574583333333334,
+          "sd": 1.2016254793501682,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.9833333333333334,
+          "sd": 1.4719837825496158,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Test, Readmission_30D split, training-fitted winsorization",
+      "n": 480,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 145.41725,
+          "sd": 19.295494339774866,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.758254166666666,
+          "sd": 1.5081375779595123,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.174435416666665,
+          "sd": 5.000739411714906,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.1233541666666667,
+          "sd": 0.381573217942063,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.589187499999994,
+          "sd": 11.907527906395897,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.567708333333333,
+          "sd": 1.1799556617113762,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.96875,
+          "sd": 1.4204965831699472,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Train, 70/30 split stratified by Disease_Progression, seed 42",
+      "n": 1120,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.97321428571428,
+          "sd": 19.029801106204662,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.799821428571428,
+          "sd": 1.524749635694703,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.132142857142856,
+          "sd": 5.064019361884003,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0974910714285715,
+          "sd": 0.3809276222076594,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.54642857142857,
+          "sd": 12.124672064304336,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.565446428571428,
+          "sd": 1.2002653775617587,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.9678571428571427,
+          "sd": 1.4512768582669708,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Train, Disease_Progression split, training-fitted winsorization",
+      "n": 1120,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.98328571428573,
+          "sd": 18.774829620109443,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.794439285714286,
+          "sd": 1.5093148076018854,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.112028571428574,
+          "sd": 5.009706706946109,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0957321428571427,
+          "sd": 0.3760326260763379,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.54528571428572,
+          "sd": 12.01295756739986,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.562053571428572,
+          "sd": 1.1806744701464111,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.95625,
+          "sd": 1.4106882474685978,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Test, 70/30 split stratified by Disease_Progression, seed 42",
+      "n": 480,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.325,
+          "sd": 19.51592144837448,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.852291666666667,
+          "sd": 1.5344733676429734,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.901041666666668,
+          "sd": 4.9283826019627535,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Creatinine": {
+          "mean": 1.0823749999999999,
+          "sd": 0.3775453421593508,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.077083333333334,
+          "sd": 12.179258517275153,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.704375,
+          "sd": 1.203145505546049,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 2.0208333333333335,
+          "sd": 1.3583359482707689,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Test, Disease_Progression split, training-fitted winsorization",
+      "n": 480,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.3115,
+          "sd": 19.048560804599216,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.8503375,
+          "sd": 1.5294026201016182,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.900168749999995,
+          "sd": 4.926129756569766,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Creatinine": {
+          "mean": 1.0816875000000001,
+          "sd": 0.3757368074682464,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.083437499999995,
+          "sd": 12.05266269909052,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.704583333333333,
+          "sd": 1.1909627661555267,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 2.0166666666666666,
+          "sd": 1.3444905490425945,
+          "mean_matches": false,
+          "sd_matches": true
+        }
+      }
+    },
+    {
+      "scenario": "Train, 70/30 split stratified by Complication, seed 42",
+      "n": 1120,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.9767857142857,
+          "sd": 19.153801015023628,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.8098214285714285,
+          "sd": 1.5167141369641635,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.12866071428571,
+          "sd": 5.030124620791158,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.081330357142857,
+          "sd": 0.3708472990124897,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.840178571428574,
+          "sd": 12.25607004192056,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.636517857142857,
+          "sd": 1.2066676614041307,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.9758928571428571,
+          "sd": 1.4337777353579853,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Train, Complication split, training-fitted winsorization",
+      "n": 1120,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.9672142857143,
+          "sd": 18.853466963406976,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.805535714285714,
+          "sd": 1.5048761015245125,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.104975,
+          "sd": 4.967793738702817,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0797603571428571,
+          "sd": 0.36681568857295394,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.85357142857143,
+          "sd": 12.14663116004745,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.63125,
+          "sd": 1.1876134064657395,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.9669642857142857,
+          "sd": 1.4027222603079292,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Test, 70/30 split stratified by Complication, seed 42",
+      "n": 480,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.31666666666666,
+          "sd": 19.230166512689795,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.828958333333333,
+          "sd": 1.55350467756906,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.90916666666667,
+          "sd": 5.009181479577029,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.1200833333333333,
+          "sd": 0.3991875796289171,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 56.391666666666666,
+          "sd": 11.81241400244108,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.538541666666666,
+          "sd": 1.1909514267904682,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 2.002083333333333,
+          "sd": 1.4016080212502797,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Test, Complication split, training-fitted winsorization",
+      "n": 480,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 1,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.34900000000002,
+          "sd": 18.867527655551097,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.8220833333333335,
+          "sd": 1.5344927124237373,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.888641666666665,
+          "sd": 4.957269216440922,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.1153574999999998,
+          "sd": 0.3874557999790033,
+          "mean_matches": true,
+          "sd_matches": true
+        },
+        "Age": {
+          "mean": 56.43958333333333,
+          "sd": 11.689819269991565,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.536458333333333,
+          "sd": 1.179674753631821,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.9916666666666667,
+          "sd": 1.3646037352323785,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Disease_Type=Cardiovascular Disease",
+      "n": 394,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 146.36040609137055,
+          "sd": 19.590127228324665,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.269796954314721,
+          "sd": 1.3160881427092994,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.9246192893401,
+          "sd": 4.915347308956681,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Creatinine": {
+          "mean": 1.1004314720812183,
+          "sd": 0.37918765000712934,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.80456852791878,
+          "sd": 11.871229335905936,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.6581218274111675,
+          "sd": 1.2033445864637924,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 2.0736040609137056,
+          "sd": 1.4203765065789713,
+          "mean_matches": true,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Disease_Type=Diabetes",
+      "n": 586,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 143.45221843003412,
+          "sd": 18.932049528343722,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 7.744197952218431,
+          "sd": 1.4122209416725002,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.05324232081911,
+          "sd": 4.976141167850529,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.1017064846416382,
+          "sd": 0.38922296801405804,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Age": {
+          "mean": 56.877133105802045,
+          "sd": 12.706896544831705,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.6160409556314,
+          "sd": 1.240257221058658,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.9488054607508531,
+          "sd": 1.47599838082887,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Disease_Type=Hypertension",
+      "n": 620,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 145.0274193548387,
+          "sd": 19.07601213269855,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.284677419354839,
+          "sd": 1.3242149108141053,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.15967741935484,
+          "sd": 5.14004707198637,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0799354838709676,
+          "sd": 0.371487855587118,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.651612903225804,
+          "sd": 11.754265605070117,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.566290322580646,
+          "sd": 1.1655290406745737,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.9596774193548387,
+          "sd": 1.374820849238989,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Sex=Female",
+      "n": 766,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.82637075718014,
+          "sd": 19.029660622635557,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.8546997389033955,
+          "sd": 1.5163846240403769,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.2097911227154,
+          "sd": 5.0381520326430875,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0776370757180156,
+          "sd": 0.3771697544466495,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 58.13838120104439,
+          "sd": 12.664774450651239,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.617362924281985,
+          "sd": 1.2023718787382118,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 2.019582245430809,
+          "sd": 1.4510335583109353,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Sex=Male",
+      "n": 834,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.73501199040768,
+          "sd": 19.315241562105744,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.779616306954438,
+          "sd": 1.5374451755197522,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.927817745803353,
+          "sd": 5.008827097586245,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.1070263788968824,
+          "sd": 0.3820014666880454,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 56.7326139088729,
+          "sd": 11.602426211772013,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.597721822541966,
+          "sd": 1.2031499630922453,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.9508393285371703,
+          "sd": 1.398414645365307,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Smoking_Status=0",
+      "n": 1266,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.93601895734596,
+          "sd": 19.317153644605217,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.805292259083728,
+          "sd": 1.5034175933424656,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.14976303317536,
+          "sd": 4.991765941681321,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0884281200631911,
+          "sd": 0.370938316637873,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.26145339652449,
+          "sd": 12.234483079635593,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.588862559241706,
+          "sd": 1.191004811134904,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 2.0126382306477093,
+          "sd": 1.436893274828971,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Smoking_Status=1",
+      "n": 334,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.18263473053892,
+          "sd": 18.63332441146599,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.854491017964072,
+          "sd": 1.6167556058688246,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.73323353293413,
+          "sd": 5.135269644105454,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.1101197604790418,
+          "sd": 0.4120730394220921,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.952095808383234,
+          "sd": 11.772777875153345,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.67634730538922,
+          "sd": 1.2442337194781417,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.874251497005988,
+          "sd": 1.3696830729563307,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Readmission_30D=0",
+      "n": 993,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 142.43907351460223,
+          "sd": 18.55757616208882,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.51742195367573,
+          "sd": 1.4260637654418753,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.239677744209466,
+          "sd": 5.084138512292475,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0918831822759318,
+          "sd": 0.3718198196376126,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 55.72406847935549,
+          "sd": 12.120463682648555,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.566465256797583,
+          "sd": 1.2087355484388793,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.8821752265861027,
+          "sd": 1.3444983855627424,
+          "mean_matches": false,
+          "sd_matches": true
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Readmission_30D=1",
+      "n": 607,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 148.60626029654037,
+          "sd": 19.559880818698893,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 7.30329489291598,
+          "sd": 1.5629019140984781,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.77347611202636,
+          "sd": 4.9125626937615765,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Creatinine": {
+          "mean": 1.0947116968698518,
+          "sd": 0.3929664715560959,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Age": {
+          "mean": 60.15650741350906,
+          "sd": 11.667571756196791,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.673640856672158,
+          "sd": 1.1900704791694834,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 2.1499176276771004,
+          "sd": 1.531494177476966,
+          "mean_matches": true,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Disease_Progression=0",
+      "n": 788,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 142.30837563451777,
+          "sd": 19.52465826739268,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.479441624365482,
+          "sd": 1.4185318010322048,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.981979695431477,
+          "sd": 4.9191460235089295,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Creatinine": {
+          "mean": 1.0848604060913705,
+          "sd": 0.3751968304185479,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 55.39720812182741,
+          "sd": 11.963979922059208,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.600761421319796,
+          "sd": 1.1898765822555986,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.8007614213197969,
+          "sd": 1.3497232730389528,
+          "mean_matches": false,
+          "sd_matches": true
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Disease_Progression=1",
+      "n": 812,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 147.17610837438423,
+          "sd": 18.525012800622022,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 7.141748768472907,
+          "sd": 1.5590532382475655,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.141256157635468,
+          "sd": 5.124148952672326,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.1008128078817734,
+          "sd": 0.38440189028059196,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 59.354679802955665,
+          "sd": 11.996498267168056,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.613300492610837,
+          "sd": 1.2152120245907672,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 2.1613300492610836,
+          "sd": 1.471415167031104,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Complication=0",
+      "n": 895,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 142.45698324022345,
+          "sd": 18.754927580834817,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.533743016759776,
+          "sd": 1.4608924982284464,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.10793296089385,
+          "sd": 5.223622740674116,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0988603351955308,
+          "sd": 0.3679464713128329,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 55.86480446927374,
+          "sd": 11.92269288066257,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.588715083798883,
+          "sd": 1.2264679933216645,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.8312849162011173,
+          "sd": 1.3451063106552648,
+          "mean_matches": false,
+          "sd_matches": true
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Complication=1",
+      "n": 705,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 147.72624113475177,
+          "sd": 19.305931309319956,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 7.173333333333333,
+          "sd": 1.5360250994240316,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.005531914893613,
+          "sd": 4.759901227479183,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0854609929078014,
+          "sd": 0.3946058072932796,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Age": {
+          "mean": 59.361702127659576,
+          "sd": 12.138100113748168,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.630496453900709,
+          "sd": 1.171679499596344,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 2.1773049645390072,
+          "sd": 1.4966045278664741,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=1",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 145.33,
+          "sd": 18.077305935868594,
+          "mean_matches": true,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.859,
+          "sd": 1.4761467037219203,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.748999999999995,
+          "sd": 4.781519453356671,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0905,
+          "sd": 0.38218503900650536,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.67,
+          "sd": 12.506204520762944,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.489,
+          "sd": 1.2044442114875469,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.92,
+          "sd": 1.3079400103625054,
+          "mean_matches": false,
+          "sd_matches": true
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=2",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 145.78,
+          "sd": 19.173624560522686,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.754000000000001,
+          "sd": 1.3995973446933685,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.398000000000007,
+          "sd": 5.38373870319153,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.1028,
+          "sd": 0.3612997859860082,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.58,
+          "sd": 11.589075315428175,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.563000000000001,
+          "sd": 1.2419970071045119,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.68,
+          "sd": 1.2299297836572916,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=3",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 146.14,
+          "sd": 16.825317623489703,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.633000000000001,
+          "sd": 1.417855472681945,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.845,
+          "sd": 4.844894740910791,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.1043,
+          "sd": 0.3395667322582789,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.53,
+          "sd": 12.510565232004604,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.581,
+          "sd": 1.286188873448149,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Comorbidity_Count": {
+          "mean": 1.97,
+          "sd": 1.290642311315407,
+          "mean_matches": false,
+          "sd_matches": true
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=4",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 142.6,
+          "sd": 17.619433715203346,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.785999999999999,
+          "sd": 1.720583645397131,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.462999999999997,
+          "sd": 5.63489587438415,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0399,
+          "sd": 0.390489190734914,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Age": {
+          "mean": 55.29,
+          "sd": 12.258408781672516,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.5760000000000005,
+          "sd": 1.293348953357722,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Comorbidity_Count": {
+          "mean": 2.03,
+          "sd": 1.4937918668322376,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=5",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 147.52,
+          "sd": 18.16783704876018,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 7.004999999999999,
+          "sd": 1.6069530110734351,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.802000000000003,
+          "sd": 4.7269265218992285,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 0.9841999999999999,
+          "sd": 0.4145343742981364,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.8,
+          "sd": 12.960702063537992,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.812,
+          "sd": 1.030669097178521,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Comorbidity_Count": {
+          "mean": 2.01,
+          "sd": 1.2672646116575639,
+          "mean_matches": false,
+          "sd_matches": true
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=6",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 141.11,
+          "sd": 19.505966453183685,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 7.013,
+          "sd": 1.6752901150836443,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.753,
+          "sd": 5.302457120538696,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0215,
+          "sd": 0.3441029180082874,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 56.69,
+          "sd": 12.718947132589873,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.579999999999999,
+          "sd": 1.096458946893235,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Comorbidity_Count": {
+          "mean": 2.26,
+          "sd": 1.4813316422541691,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=7",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 147.39,
+          "sd": 18.290525780669437,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.876,
+          "sd": 1.5944423679288209,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.897000000000002,
+          "sd": 5.30554227085967,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.1124,
+          "sd": 0.3537822191488128,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 58.38,
+          "sd": 11.982124733590164,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.8020000000000005,
+          "sd": 1.2266386689822004,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.91,
+          "sd": 1.3188225541341525,
+          "mean_matches": false,
+          "sd_matches": true
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=8",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.63,
+          "sd": 19.132000270317643,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.886000000000001,
+          "sd": 1.5283859579188876,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.349000000000004,
+          "sd": 5.068928821155353,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0744000000000002,
+          "sd": 0.38686859930900713,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Age": {
+          "mean": 57.36,
+          "sd": 13.17598059525228,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.596,
+          "sd": 1.104254399030304,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Comorbidity_Count": {
+          "mean": 2.04,
+          "sd": 1.4765507171113428,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=9",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 146.95,
+          "sd": 18.367392605133457,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 7.007999999999999,
+          "sd": 1.5227354439702363,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.287000000000006,
+          "sd": 4.815560950992861,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0582999999999998,
+          "sd": 0.35965206250014203,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 57.43,
+          "sd": 11.41083571510745,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.579,
+          "sd": 1.2926595401994627,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Comorbidity_Count": {
+          "mean": 1.99,
+          "sd": 1.6111668398581773,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=10",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.86,
+          "sd": 16.86609173771596,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.606999999999999,
+          "sd": 1.556105927167446,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 29.008000000000003,
+          "sd": 5.33743554357504,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.2062,
+          "sd": 0.4007991511916656,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 58.66,
+          "sd": 11.426727484721994,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.668999999999999,
+          "sd": 1.2177720176078473,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 2.03,
+          "sd": 1.5005386238335092,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=11",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.7,
+          "sd": 19.321574271348396,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.450999999999999,
+          "sd": 1.3580656921675123,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.341000000000005,
+          "sd": 4.909218189520938,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Creatinine": {
+          "mean": 1.1066,
+          "sd": 0.3923774208641986,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Age": {
+          "mean": 57.04,
+          "sd": 12.20938536164253,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.468000000000002,
+          "sd": 1.2912979923513026,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Comorbidity_Count": {
+          "mean": 2.31,
+          "sd": 1.7390058694959638,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=12",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.35,
+          "sd": 20.13859804735998,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.799999999999999,
+          "sd": 1.4502525032670424,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.578999999999997,
+          "sd": 4.876086669873826,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Creatinine": {
+          "mean": 1.1331000000000002,
+          "sd": 0.3832706009275347,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 58.53,
+          "sd": 12.02056739110265,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.526000000000002,
+          "sd": 1.1855715069028092,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.93,
+          "sd": 1.4924388554891408,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=13",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 144.26,
+          "sd": 20.750864652789385,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.9430000000000005,
+          "sd": 1.6733354460930767,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.412999999999993,
+          "sd": 4.844379331876387,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.1589999999999998,
+          "sd": 0.38332279300396893,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 55.82,
+          "sd": 11.85124977426943,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.597,
+          "sd": 1.194131695019651,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Comorbidity_Count": {
+          "mean": 1.71,
+          "sd": 1.297199781347219,
+          "mean_matches": false,
+          "sd_matches": true
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=14",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 146.71,
+          "sd": 20.82456542769921,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.706999999999998,
+          "sd": 1.502607497961225,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.865,
+          "sd": 4.735837472470584,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0956000000000001,
+          "sd": 0.386865988333548,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Age": {
+          "mean": 57.76,
+          "sd": 11.888471624887599,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.678,
+          "sd": 1.3813022694529824,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Comorbidity_Count": {
+          "mean": 2.15,
+          "sd": 1.4310764472870758,
+          "mean_matches": true,
+          "sd_matches": false
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=15",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 141.23,
+          "sd": 22.505601996216882,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.826999999999999,
+          "sd": 1.4839787496096193,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 28.386999999999997,
+          "sd": 4.983217389955565,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.0902,
+          "sd": 0.3773377770377596,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Age": {
+          "mean": 58.13,
+          "sd": 12.444344786758247,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.612,
+          "sd": 1.1037383674759087,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Comorbidity_Count": {
+          "mean": 1.85,
+          "sd": 1.328590047814417,
+          "mean_matches": false,
+          "sd_matches": true
+        }
+      }
+    },
+    {
+      "scenario": "Subgroup Hospital_ID=16",
+      "n": 100,
+      "ddof": 1,
+      "matching_mean_sd_pairs": 0,
+      "values": {
+        "Systolic_BP": {
+          "mean": 142.9,
+          "sd": 20.13715596863297,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "HbA1c": {
+          "mean": 6.894000000000001,
+          "sd": 1.4075424532055003,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "BMI": {
+          "mean": 27.868999999999996,
+          "sd": 4.7048587608552035,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Creatinine": {
+          "mean": 1.1083,
+          "sd": 0.3869462286137233,
+          "mean_matches": false,
+          "sd_matches": true
+        },
+        "Age": {
+          "mean": 56.82,
+          "sd": 11.482423986513503,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Cholesterol": {
+          "mean": 5.586,
+          "sd": 1.0625887960518638,
+          "mean_matches": false,
+          "sd_matches": false
+        },
+        "Comorbidity_Count": {
+          "mean": 1.95,
+          "sd": 1.3734495390671027,
+          "mean_matches": false,
+          "sd_matches": false
+        }
+      }
+    }
+  ]
+}
