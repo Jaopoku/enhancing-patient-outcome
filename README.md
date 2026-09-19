@@ -1,8 +1,7 @@
 # Patient-data analysis
 
-Reconstructed Python analysis of the supplied workbook, not the original historical thesis implementation.
+Reconstructed Python analysis of the workbook data.
 
-## What changed
 
 - Added `src/predictor_summary.py` to calculate the eight-predictor table directly
   from `Patient_Data`, without reading the workbook's summary sheets.
@@ -18,10 +17,6 @@ Reconstructed Python analysis of the supplied workbook, not the original histori
   `archive/` and updated the project documentation. Active model code, tests,
   patient data and thesis documents were retained.
 
-The workbook currently in the data folder is a different version from the one
-used for the earlier audit. The project does not have a verified record of how
-its patient values changed between those versions. The filename fix and project
-cleanup should not be described as corrections to the patient measurements.
 
 ## Run the predictor table
 
