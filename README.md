@@ -4,7 +4,7 @@ Reconstructed Python analysis of the workbook data.
 
 
 - Added `src/predictor_summary.py` to calculate the eight-predictor table directly
-  from `Patient_Data`, without reading the workbook's summary sheets.
+  from `Patient_Data`
 - Extended the shared SHAP function to accept a supplied dataset, outcome,
   output directory and model parameters.
 - Added input validation for required columns, numeric values, smoking codes
